@@ -1,0 +1,329 @@
+$red = #ff5252;
+$offblack = #271218;
+$darkgray = #9a999c;
+$lightgray = #eee;
+
+
+
+
+//MQs 
+mq-xs  = "only screen and (max-width: 767px)"
+mq-sm  = "only screen and (max-width: 991px) and (min-width: 768px)"
+mq-md  = "only screen and (max-width: 1199px) and (min-width: 992px)"
+mq-lg  = "only screen and (min-width: 1201px)"
+
+
+* 
+	margin 0
+	padding 0
+	box-sizing border-box
+
+html,
+body
+	height 100%
+	
+h1,
+h2,
+h3,
+h4
+	font-family: 'Bitter', serif;
+	font-weight 700
+	margin 0
+
+p 
+	margin-bottom 15px
+
+body 
+	font-family 'Raleway', sans-serif
+	line-height 1.5em
+	font-size: 16px
+	display flex
+	
+hr 
+	box-sizing content-box
+	height 0
+	margin-top 20px
+	margin-bottom 20px
+	border-top 1px solid #eee
+
+//Nav starts here //
+aside
+	width 360px
+	display inline-block
+	position fixed
+	height 100%
+	background #fff
+	box-shadow 2px 1px 5px 0px rgba(157,157,158,0.75)
+	@media mq-xs
+		width 75%
+		max-width 360px
+		height 100%
+		z-index 200
+		position fixed
+		overflow-x hidden
+		left -75%
+		transition left 0.3s ease-in
+	
+.active 
+	left 0
+	
+.aside__header
+	background $red
+	width 360px
+	padding-right 50px
+	text-align right
+	height 360px
+	@media mq-xs
+		height 150px
+		width auto
+		text-align left
+		padding 20px 0px 0px 50px
+
+.header__name
+	color white
+	padding 140px 0px 10px 0px
+	@media mq-xs
+		display block
+		padding 25px 0px 5px 0px
+		font-size 1.4em
+
+.header__surname
+	color black
+	@media mq-xs
+		display block
+		font-size 1.2em
+	
+.header__job
+	color $offblack
+	padding-top 10px
+	@media mq-xs
+		display block
+		font-size 14px
+		padding 0
+	
+.nav__links
+	border-bottom 1px solid $lightgray 
+	padding 15px
+	transition background ease-out 0.2s	
+	padding-left 50px
+	color $darkgray
+	text-decoration none
+	font-weight 700
+	display block
+	list-style-type none
+	&:hover,
+	&.active
+		background $lightgray
+		font-weight bold
+		
+.nav__span 
+	vertical-align top
+	margin-left 30px
+
+.app-shell 
+	display none
+	@media mq-xs
+		display block
+		box-shadow 0 2px 5px rgba(0,0,0,0.26)
+		width 100%
+		background $red
+		padding 12px
+		z-index 100
+		padding-left 50px
+		font-size 50px
+		position fixed
+	
+//main starts here//	
+main
+	margin-left 400px
+	width 100%
+	@media mq-xs
+		margin 56px 0px 0px 0px
+		
+//profile
+.profile 
+	min-height 100%
+	background url('../img/try3.png') 
+	background-size cover
+	margin 0
+	margin-left -37px
+	padding 360px 0px 0px 50px
+	ul 
+		border-left 4px solid #d3d3d3
+	li 
+		padding 15px
+		list-style-type none
+	@media mq-xs
+		margin 0
+		padding 50px 0px 0px 0px
+		ul 
+			border none
+		li
+			padding 15px
+			
+.profile__title
+	color $darkgray
+	@media mq-xs 
+		margin-left 32px
+		padding 15px
+		
+.profile__links 
+	margin-top 20px
+	a
+		text-decoration none
+		color black
+			
+.profile__icons
+	margin-right 20px
+	color $red
+
+.icon-person
+	color $red
+	
+.icon-assignment
+	color #9c27b0
+	
+.icon-skills
+	color #4caf50
+	
+.icon-code
+	color #2196f3
+	
+.icon-menu
+	color white
+	font-size 30px
+	
+.icon-github
+	width: 22px
+	margin-left 10px
+	vertical-align top
+	
+
+#work:before,
+#skills:before,
+#hobbies:before
+	display block
+	content " "
+	padding-top 50px
+	visibility hidden
+
+#work
+	height 100%
+	background #f6f9f5		
+	margin-left -37px
+	padding-left 37px
+	@media mq-md
+		height auto
+		padding-bottom 50px
+	@media mq-sm
+		height auto
+		padding-bottom 50px
+	@media mq-xs
+		padding-top 20px
+		height auto
+		padding-bottom 50px
+		
+.flex
+	padding 0
+	margin 0 
+	display flex
+	-webkit-flex-flow row wrap
+	align-content flex-start
+	justify-content space-around
+	
+.card
+	opacity 0.8
+	font-weight 400
+	border-radius 2px
+	margin 10px
+	box-shadow 0 2px 5px rgba(0,0,0,0.26)
+	padding 5px
+	background white 
+	color black
+	text-decoration none
+	transition opacity ease-in 0.2s
+	&:hover
+		opacity 1
+	
+.card__caption
+	margin 0
+	color black
+	
+.sample
+	width 300px
+	height 200px
+	background $lightgray
+	border-radius 4px
+	padding 10px
+
+// //SKILLS
+#skills,
+#hobbies
+	height 100%
+	@media mq-xs
+		height auto
+		padding-top 20px
+		
+
+.skills__title,
+.hobbies__title
+.work__title
+	text-align center
+	@media mq-xs
+		padding-top 0
+	
+.skills__text
+	margin 0 auto
+	width 70%
+	display block
+	@media mq-xs
+		width 90%
+		margin 0 15px
+		padding 0 -15px
+	
+//HOBBIES
+.flex--around
+	justify-content space-between
+	width 70%
+	margin 0 auto
+	@media mq-xs
+		justify-content space-around
+
+.hobby
+	height auto
+	width 150px
+	box-shadow 0 2px 5px rgba(0,0,0,0.26)
+	margin 20px 0px
+	
+.hobby--reading
+	background url(../img/myhealth.png) 
+	background-position 50% 100%
+	
+.hobby--coding
+	background url(../img/code.jpg)
+	background-position 47% 86%
+
+.hobby--cooking
+	background url(../img/knife.png) no-repeat
+	background-position 50% 15%
+	
+.hobby--gaming
+	background url(../img/controller.png) no-repeat
+	background-position center
+
+.hobby__text
+	text-align center
+	padding-top 110px
+	
+.non-scroll
+	overflow hidden
+
+.overlay
+	position absolute
+	top 0
+	left 0
+	width 100%
+	height 100%
+	z-index 120
+	background-color rgba(0,0,0,0.5)
+

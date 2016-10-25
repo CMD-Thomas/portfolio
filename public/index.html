@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Portfolio Thomas Machielsen</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/style.css" async>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' async>
+        <link href="https://file.myfontastic.com/p4FGDQd9R9qVMMntYGQtnP/icons.css" rel="stylesheet" async>
+        <link href='https://fonts.googleapis.com/css?family=Raleway:300|Bitter:400,700' rel='stylesheet' type='text/css' async>
+    </head>
+    <body>
+        
+        <div class="app-shell"><i id="menu-button" class="icon-menu"></i></div>
+
+        <aside>
+            <header class="aside__header">
+                <h1 class="header__name">Thomas</h1><h2 class="header__surname">Machielsen</h2>
+                <p class="header__job">Front End Developer</p>
+            </header>
+            <nav>
+                <ul>
+                    <a href="#profile" class="nav__links"><li><i class="icon-person"></i><span class="nav__span">Contact</span></li></a>
+                    <a class="nav__links" href="#work"><li><i class="icon-assignment"></i><span class="nav__span">Recent Work</span></li></a>
+                    <a class="nav__links" href="#skills"><li><i class="icon-skills"></i><span class="nav__span">About</span></li></a>
+                    <a class="nav__links" href="#hobbies"><li><i class="icon-code"></i><span class="nav__span">Hobbies</span></li></a>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+
+            <div class="profile" id="profile">
+                <h1 class="profile__title">Contact</h1>
+                <div class="profile__links">
+                    <ul>
+                        <li><a href="mailto:thomas.machielsen@gmail.com"><i class="profile__icons icon-mail"></i>thomas.machielsen@gmail.com</li>
+                        <li><a href="https://www.linkedin.com/in/thomas-machielsen-b7178648"><i class="profile__icons icon-cv"></i>LinkedIn</a></li>
+                        <li><a href="https://www.facebook.com/thomas.miauw"><i class="profile__icons icon-feb"></i>Facebook</a></li>
+                        <li><i class="profile__icons icon-home"></i>Amsterdam, Netherlands</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div id="work">
+                <h1 class="work__title">Work</h1>
+                <hr>
+                <div class="flex">
+                    
+                    <div class="card">
+                        <a  href="#" ><img src="img/portfolio.jpg" alt="Image of this portfolio" class="sample"></a><p class="card__caption">Portfolio</p><a href="github.com">Check on Github<img src="img/github.png" class="icon-github" alt="Github link to my portfolio"></a>
+                    </div>
+
+                    <div class="card">
+                        <a href="react/index.html"><img src="img/react-demo-medium.png" alt="Image of my react demo" class="sample"><p class="card__caption"></a>React demo met API van Spotify</p><a href="github.com">Check on Github<img src="img/github.png" class="icon-github" alt="Github link to my react demo"></a>
+                    </div>
+
+                    <div class="card">
+                        <a href="http://thomasmachielsen.me"><img src="img/banoalllap2.jpg" alt="Image off my node blog" class="sample"></a><p class="card__caption">Sample Blog gebouwd met Node.</p><a href="github.com">Check on Github<img src="img/github.png" class="icon-github" alt="Github link to my react demo"></a>
+                    </div>
+
+                    <div class="card">
+                        <a href="http://amc.thomasmachielsen.me"><img src="img/myhealthall.png" alt="Image of myhealth web app" class="sample"></a><p class="card__caption">Myhealthdiary voor het AMC</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="" id="skills">
+                <h1 class="skills__title">About</h1>
+                <hr>
+                <span class="skills__text">
+                    <p>Tijdens mijn opleiding Communicatie en Multimedia Design heb ik mij gespecialiseerd als Front End Developer.</p>
+
+                    <p>Als Front End Developer ben ik natuurlijk constant bezig met HTML, CSS (of terwijl SASS, LESS en Stylus ;)) en JavaScript. Het afgelopen jaar heb ik hiernaast ook nog Node opgepakt. Tijdens stages ben ik ook nog bezig geweest met meehelpen met Angular. Hierdoor ben ik een brede generalist geworden die aan alle kanten wel iets weet.</p>
+                    <p>De huidige Front Ender kan natuurlijk ook niet zonder tools. In mijn ontwikkelingsomgeving maak ik gebruik van Gulp en Git. Daarnaast heb ik een grote interesse in Progressive Web Apps en perfomance. </p>
+                </span>
+            </div>
+
+            <div id="hobbies">
+                <h1 class="hobbies__title">Hobbies</h1>
+                <hr>
+                <div class="flex flex--around">
+                    <div class="hobby hobby--reading"><p class="hobby__text">Lezen</p></div>
+                    <div class="hobby hobby--coding"><p class="hobby__text">Coden</p></div>
+                    <div class="hobby hobby--cooking"><p class="hobby__text">Koken</p></div>
+                    <div class="hobby hobby--gaming"><p class="hobby__text">Games</p></div>                    
+                </div>
+            </div>
+
+        </main>
+    </body>
+    <script src="js/output.min.js"></script>
+</html>
